@@ -4,10 +4,10 @@
 
 void ChangeToCapital(char&);
 void ChangeToCapital(char& ch) {
-    if (ch >= 97 && ch <= 122)
-    {
-        ch -= 32;
-    }
+    (ch >= 97 && ch <= 122 ? ch -= 32 : ch);
+    //if (ch >= 97 && ch <= 122) {
+    //    ch -= 32;
+    //}
 }
 
 int main()
